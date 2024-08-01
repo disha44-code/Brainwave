@@ -1,0 +1,19 @@
+$primary: #473BF0;
+$secondary: #6c757d;
+
+@import '~bootstrap/scss/bootstrap';
+
+.navbar{
+    gap: 40px;
+    .link{
+        font-family: 'Gilroy', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -0.10000000149011612px;
+        text-align: left;
+        color: #161C2D;
+        text-decoration: none;
+    }
+
+}
