@@ -1,3 +1,4 @@
+import Banner from '@/components/agency/banner/banner'
 import Header from '@/components/header/header'
 import React from 'react'
 // import Script from 'next/script'; 
@@ -7,7 +8,10 @@ import React from 'react'
 const Agency = () => {
   return (
     <>
-    <Header/>
+    <div className='bg-banner'>
+      <Header/>
+      <Banner/>
+    </div>
     </>
   )
 }

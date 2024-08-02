@@ -37,7 +37,7 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse> */}
           <div className='ms-auto'>
-            <Button variant="primary" className='btn-custom'>Get started a project</Button>
+            <Button variant="primary" className='btn-custom btn-blue-cust'>Get started a project</Button>
           </div>  
       </Container>
     </Navbar>
