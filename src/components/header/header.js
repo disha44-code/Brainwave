@@ -11,7 +11,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
   return (
    <>
-   <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+   <Navbar collapseOnSelect expand="lg" className="">
       <Container className=''>
         <div>
       <Image
@@ -21,16 +21,23 @@ const Header = () => {
       alt="logo"
       className='logo'
     /></div>
-        <Navbar id="responsive-navbar-nav">
-          <Nav className="navbar">
+        <Navbar id="responsive-navbar-nav" className='p-0'>
+          <Nav className="navbar p-0">
             <Link href="/demos" className='link'>Demos</Link>
             <Link href="/pages" className='link'>Pages</Link>
             <Link href="/support" className='link'>Support</Link>
             <Link href="/contact" className='link'>Contact</Link>
           </Nav>
         </Navbar>
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse> */}
           <div className='ms-auto'>
-            <Button variant="primary">Get started a project</Button>
+            <Button variant="primary" className='btn-custom'>Get started a project</Button>
           </div>  
       </Container>
     </Navbar>

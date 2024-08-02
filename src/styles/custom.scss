@@ -1,12 +1,74 @@
 $primary: #473BF0;
-$secondary: #6c757d;
+$secondary: #F64B4B;
+$green: #68D585;
+$text: #161C2D;
+$white: #fff;
+$black: #000;
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../public/fonts/GilroyRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../public/fonts/GilroyBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../public/fonts/GilroyMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 @import '~bootstrap/scss/bootstrap';
 
-.navbar{
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Gilroy' !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    object-fit: contain;
+    margin-right: 48px;
+}
+
+.btn-custom {
+    padding: 14px 26px;
+    letter-spacing: -0.5px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.navbar {
     gap: 40px;
-    .link{
-        font-family: 'Gilroy', sans-serif;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .link {
+        font-family: 'Gilroy';
         font-size: 15px;
         font-weight: 700;
         line-height: 26px;
