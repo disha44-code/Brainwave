@@ -8,7 +8,7 @@ const Banner = () => {
     <div className='agency-banner'>
     <Container>
         <Row className='align-items-center'>
-            <Col md={6} >
+            <Col lg={6} >
                 <div className='left-part'>
                     <h6 className='subtitle'>Let’s shift your business</h6>
                     <h1 className='main-title'>Shift your business fast with Shade Pro.</h1>
@@ -16,7 +16,7 @@ const Banner = () => {
                     <Button variant="primary" className='btn-custom btn-blue-cust-banner'>Get started a project</Button>
                 </div>
             </Col>
-            <Col md={6} className='text-end'>
+            <Col lg={6} className='text-end'>
                 <div  className='banner-img'>
                 <Image
                 src="/banner-vector-1.png"
@@ -30,7 +30,7 @@ const Banner = () => {
                 width={463}
                 height={463}
                 alt="banner"
-               
+                className='main-banner-img'
                 />
                 </div>
             </Col>

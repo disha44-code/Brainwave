@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/header/header";
+import { Card } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -90,7 +92,9 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+       
       </div>
+      <Card.Text>description</Card.Text>
     </main>
   );
 }

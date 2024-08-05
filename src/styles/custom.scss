@@ -102,7 +102,11 @@ a {
     padding: 19px 32px;
 }
 .bg-banner{
-    
+   .bg-inne-banner{
+        background-image: url('../../public/bg-agency-banner.png') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+   } 
 }
 .navbar {
     gap: 40px;
@@ -122,7 +126,7 @@ a {
 
 }
 .agency-banner {
-    padding: 136px 0px;
+    padding: 120px 0px 136px 0;
 
     .banner-img {
         position: relative;
@@ -137,7 +141,7 @@ a {
             background-image: url(../../public/bammer-vector-3.png);
             background-repeat: no-repeat;
             background-size: contain;
-            z-index: 1;
+            z-index: 2;
         }
 
         &::before {
@@ -152,15 +156,51 @@ a {
             background-position: bottom left, bottom right;
             /* Set positions for each background image */
             background-size: contain, contain;
-            z-index: 1;
+            z-index: 3;
         }
     }
 
     .banner-vector {
         position: absolute;
         left: 50%;
-        z-index: -1;
+        z-index: 1;
         top: -40px;
         transform: translateX(-50%);
+    }
+    .main-banner-img{
+        position: relative;
+        z-index: 2;
+    }
+}
+.service-card{
+    .image-container {
+        .img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .card-title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: $white;
+    }
+    .card-para{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: center;
+        color: rgba($white, 0.7);
+    }
+    .link{
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6000000238418579px;
+        text-align: left;
+        color: $white;
     }
 }
