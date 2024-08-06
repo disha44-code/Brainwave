@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
@@ -20,14 +21,15 @@ const Header = () => {
       alt="logo"
       className='logo'
     /></div>
-        <Navbar id="responsive-navbar-nav" className='p-0'>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav basic-navbar-nav" className='p-0'>
           <Nav className="navbar p-0">
-            <Link href="/demos" className='link'>Demos</Link>
-            <Link href="/pages" className='link'>Pages</Link>
-            <Link href="/support" className='link'>Support</Link>
-            <Link href="/contact" className='link'>Contact</Link>
+            <Nav.Link href="#demos" className='link'>Demos</Nav.Link>
+            <Nav.Link href="#pages" className='link'>Pages</Nav.Link>
+            <Nav.Link href="#support" className='link'>Support</Nav.Link>
+            <Nav.Link href="#contact" className='link'>Contact</Nav.Link>
           </Nav>
-        </Navbar>
+        </Navbar.Collapse>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

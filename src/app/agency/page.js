@@ -1,5 +1,8 @@
+"use client";
 import Banner from '@/components/agency/banner/banner'
 import ServiceCard from '@/components/agency/servicecard/Service_card'
+import Testimonial from '@/components/agency/testimonial/Testimonial'
+import TestimonialSlider from '@/components/agency/testimonial/testimonial-slider';
 import Header from '@/components/header/header'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -53,8 +56,12 @@ const Agency = () => {
                 />
                 </Col>
             </Row>
+            <div className="testimonial-sec">
+              <TestimonialSlider/>
+            </div>
           </Container>
         </div>
+
     </div>
     </>
   )

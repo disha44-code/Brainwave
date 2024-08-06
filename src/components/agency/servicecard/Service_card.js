@@ -15,6 +15,7 @@ const ServiceCard = ({ imageSrc, title, description, link, bgColor }) => {
             className='img'
             width={146}
             height={135}
+            style={{ maxWidth: '100%', height: '100%' }} // or specify a fixed width
           />
         </div>
         <h4 className='card-title'>{title}</h4>
